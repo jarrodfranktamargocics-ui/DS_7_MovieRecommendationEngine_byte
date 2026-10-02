@@ -1,0 +1,7 @@
+.venv/
+.runtime/
+data/
+__pycache__/
+.env*
+.vercel/
+.ipynb_checkpoints/

@@ -1,0 +1,44 @@
+{
+  "baseline": {
+    "rmse": 0.8833424215925015,
+    "mae": 0.6695613039073566
+  },
+  "factor_model": {
+    "rmse": 0.8793718016601342,
+    "mae": 0.6645166261327238
+  },
+  "selection": {
+    "factors": 16,
+    "regularization": 0.05,
+    "epoch": 4,
+    "validation_rmse": 0.859384891751712
+  },
+  "train_ratings": 621912,
+  "validation_ratings": 77655,
+  "test_ratings": 80235,
+  "users": 5000,
+  "trained_movies": 19615,
+  "test_unseen_movie_ratings": 2629,
+  "score_range": [
+    0.5,
+    5
+  ],
+  "source": {
+    "source": "https://files.grouplens.org/datasets/movielens/ml-32m.zip",
+    "dataset": "MovieLens 32M",
+    "ratings_end": "2023-10-12",
+    "retrieved_or_verified_at_utc": "2026-10-02T14:06:55.374171+00:00",
+    "sample_users": 5000,
+    "sample_seed": 42,
+    "sample_ratings": 779802,
+    "source_ratings_md5": "cf12b74f9ad4b94a011f079e26d4270a",
+    "sample_sha256": "5ae4c1c949b1900cea380288c3d2faf4bdb493e30ffe2575fc5e81e62b033297",
+    "split": "Per-user chronological 80/10/10; not a global prospective time split",
+    "split_counts": {
+      "train": 621912,
+      "test": 80235,
+      "validation": 77655
+    }
+  },
+  "note": "Test evaluated after validation selection. Per-user chronological split is not a globally prospective backtest. Exported model remains fitted on training data only."
+}

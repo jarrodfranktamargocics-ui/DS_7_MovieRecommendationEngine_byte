@@ -1,0 +1,18 @@
+{
+  "users": 200,
+  "seed": 2026,
+  "relevance": "Held-out rating >=4; only users with at least one such rating. Unknown/unrated items have unknown relevance.",
+  "candidate_policy": "All movies with >=20 training ratings; excludes training and validation history. Unknown test movies remain in recall denominator.",
+  "metrics": {
+    "factor_model": {
+      "precision_at_5": 0.009000000000000001,
+      "recall_at_5": 0.0075264319014319014,
+      "ndcg_at_5": 0.008629694494274748
+    },
+    "movie_average": {
+      "precision_at_5": 0.024000000000000004,
+      "recall_at_5": 0.016620526168344307,
+      "ndcg_at_5": 0.029859503545631626
+    }
+  }
+}

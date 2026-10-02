@@ -1,0 +1,1 @@
+{"name":"next-frame-movie-recommendations","private":true,"type":"module","scripts":{"test":"node test_browser.mjs"}}
