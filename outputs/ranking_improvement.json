@@ -1,0 +1,99 @@
+{
+  "config": {
+    "method": "support_aware_matrix_factorization",
+    "support_weight": 1.6,
+    "formula": "unclipped MF rating estimate + weight * log(1 + training rating count)",
+    "selection": "Maximum mean validation NDCG@5; ties prefer smaller weight",
+    "validation_users": 500,
+    "validation_seed": 7301,
+    "candidate_weights": [
+      0.0,
+      0.05,
+      0.1,
+      0.2,
+      0.4,
+      0.8,
+      1.6
+    ],
+    "minimum_movie_ratings": 20,
+    "note": "Ranking score is not a star rating or probability. This favors well-supported films and may reduce novelty."
+  },
+  "validation": {
+    "most_rated": {
+      "precision_at_5": 0.0352,
+      "recall_at_5": 0.03318533837187429,
+      "ndcg_at_5": 0.04298926227781347
+    },
+    "movie_average": {
+      "precision_at_5": 0.016800000000000002,
+      "recall_at_5": 0.017332902055838807,
+      "ndcg_at_5": 0.02234635244000781
+    },
+    "original": {
+      "precision_at_5": 0.006,
+      "recall_at_5": 0.004327825853252798,
+      "ndcg_at_5": 0.006484779841773161
+    },
+    "weight_0": {
+      "precision_at_5": 0.006,
+      "recall_at_5": 0.004327825853252798,
+      "ndcg_at_5": 0.006484779841773161
+    },
+    "weight_0.05": {
+      "precision_at_5": 0.016,
+      "recall_at_5": 0.01567607953343797,
+      "ndcg_at_5": 0.02068498319632674
+    },
+    "weight_0.1": {
+      "precision_at_5": 0.0268,
+      "recall_at_5": 0.02525668967074139,
+      "ndcg_at_5": 0.03202352051277225
+    },
+    "weight_0.2": {
+      "precision_at_5": 0.0308,
+      "recall_at_5": 0.03194030684413045,
+      "ndcg_at_5": 0.03772492200301259
+    },
+    "weight_0.4": {
+      "precision_at_5": 0.0328,
+      "recall_at_5": 0.03268659178826331,
+      "ndcg_at_5": 0.04052198656011558
+    },
+    "weight_0.8": {
+      "precision_at_5": 0.033600000000000005,
+      "recall_at_5": 0.029038172246687408,
+      "ndcg_at_5": 0.04086745950174968
+    },
+    "weight_1.6": {
+      "precision_at_5": 0.0344,
+      "recall_at_5": 0.03206196672436471,
+      "ndcg_at_5": 0.04208795109605618
+    }
+  },
+  "test": {
+    "improved": {
+      "precision_at_5": 0.03900000000000001,
+      "recall_at_5": 0.03385992322850915,
+      "ndcg_at_5": 0.05462176520166247
+    },
+    "most_rated": {
+      "precision_at_5": 0.035,
+      "recall_at_5": 0.034966150334736254,
+      "ndcg_at_5": 0.051714872562257395
+    },
+    "movie_average": {
+      "precision_at_5": 0.024000000000000004,
+      "recall_at_5": 0.016620526168344307,
+      "ndcg_at_5": 0.029859503545631626
+    },
+    "original": {
+      "precision_at_5": 0.009000000000000001,
+      "recall_at_5": 0.0075264319014319014,
+      "ndcg_at_5": 0.008629694494274748
+    }
+  },
+  "test_users": 200,
+  "test_seed": 2026,
+  "evaluation_note": "Same historical test cohort as the original audit; not a new untouched test. Weight selected on validation only. Test ratings >=4 define observed relevance, including unavailable items in recall denominator. All supported candidates; training and validation history excluded.",
+  "onboarding_note": "Existing-user evaluation only. Visitor fold-in quality is not separately established."
+}

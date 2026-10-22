@@ -1,0 +1,19 @@
+{
+  "method": "support_aware_matrix_factorization",
+  "support_weight": 1.6,
+  "formula": "unclipped MF rating estimate + weight * log(1 + training rating count)",
+  "selection": "Maximum mean validation NDCG@5; ties prefer smaller weight",
+  "validation_users": 500,
+  "validation_seed": 7301,
+  "candidate_weights": [
+    0.0,
+    0.05,
+    0.1,
+    0.2,
+    0.4,
+    0.8,
+    1.6
+  ],
+  "minimum_movie_ratings": 20,
+  "note": "Ranking score is not a star rating or probability. This favors well-supported films and may reduce novelty."
+}

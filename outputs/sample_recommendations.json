@@ -184,29 +184,29 @@
     ],
     "recommendations": [
       {
-        "movieId": 171011,
-        "title": "Planet Earth II (2016)",
-        "score": 4.433987051923105
+        "movieId": 318,
+        "title": "Shawshank Redemption, The (1994)",
+        "score": 4.286914172880451
       },
       {
-        "movieId": 170705,
-        "title": "Band of Brothers (2001)",
-        "score": 4.367765410339926
+        "movieId": 296,
+        "title": "Pulp Fiction (1994)",
+        "score": 4.208155303877082
       },
       {
-        "movieId": 1131,
-        "title": "Jean de Florette (1986)",
-        "score": 4.3542131374555915
+        "movieId": 2571,
+        "title": "Matrix, The (1999)",
+        "score": 3.958878454101455
       },
       {
-        "movieId": 202439,
-        "title": "Parasite (2019)",
-        "score": 4.327827790999124
+        "movieId": 260,
+        "title": "Star Wars: Episode IV - A New Hope (1977)",
+        "score": 4.036987897306629
       },
       {
-        "movieId": 159817,
-        "title": "Planet Earth (2006)",
-        "score": 4.298427508188059
+        "movieId": 2959,
+        "title": "Fight Club (1999)",
+        "score": 4.131934014574677
       }
     ]
   },
@@ -391,29 +391,29 @@
     ],
     "recommendations": [
       {
-        "movieId": 171011,
-        "title": "Planet Earth II (2016)",
-        "score": 4.296964712524656
+        "movieId": 296,
+        "title": "Pulp Fiction (1994)",
+        "score": 4.110789791454149
       },
       {
-        "movieId": 170705,
-        "title": "Band of Brothers (2001)",
-        "score": 4.2776370367766585
+        "movieId": 260,
+        "title": "Star Wars: Episode IV - A New Hope (1977)",
+        "score": 3.926061723762711
       },
       {
-        "movieId": 202439,
-        "title": "Parasite (2019)",
-        "score": 4.22546412360196
+        "movieId": 1196,
+        "title": "Star Wars: Episode V - The Empire Strikes Back (1980)",
+        "score": 4.120450916385031
       },
       {
-        "movieId": 2019,
-        "title": "Seven Samurai (Shichinin no samurai) (1954)",
-        "score": 4.203301241064841
+        "movieId": 4993,
+        "title": "Lord of the Rings: The Fellowship of the Ring, The (2001)",
+        "score": 4.04448240162527
       },
       {
-        "movieId": 159817,
-        "title": "Planet Earth (2006)",
-        "score": 4.185185667413285
+        "movieId": 858,
+        "title": "Godfather, The (1972)",
+        "score": 4.167176619350743
       }
     ]
   },
@@ -664,29 +664,29 @@
     ],
     "recommendations": [
       {
-        "movieId": 159817,
-        "title": "Planet Earth (2006)",
-        "score": 4.7622462277820405
+        "movieId": 296,
+        "title": "Pulp Fiction (1994)",
+        "score": 4.4356200431176065
       },
       {
-        "movieId": 171011,
-        "title": "Planet Earth II (2016)",
-        "score": 4.742225527373952
+        "movieId": 356,
+        "title": "Forrest Gump (1994)",
+        "score": 4.276121644866112
       },
       {
-        "movieId": 202439,
-        "title": "Parasite (2019)",
-        "score": 4.637420489235677
+        "movieId": 593,
+        "title": "Silence of the Lambs, The (1991)",
+        "score": 4.266063484477844
       },
       {
-        "movieId": 6669,
-        "title": "Ikiru (1952)",
-        "score": 4.627196683562381
+        "movieId": 2959,
+        "title": "Fight Club (1999)",
+        "score": 4.3754439614347485
       },
       {
-        "movieId": 170705,
-        "title": "Band of Brothers (2001)",
-        "score": 4.624112790375408
+        "movieId": 527,
+        "title": "Schindler's List (1993)",
+        "score": 4.44789242467708
       }
     ]
   }

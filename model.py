@@ -20,8 +20,10 @@ def predict(mu,bu,bi,P,Q,u,i):
 def metrics(actual,pred):
     return {'rmse':float(np.sqrt(np.mean((actual-pred)**2))),'mae':float(np.mean(np.abs(actual-pred)))}
 
-def top_five(mu,bu,bi,P,Q,user,seen,eligible):
-    scores=np.clip(mu+bu[user]+bi+Q@P[user],.5,5)
-    scores=scores.copy();scores[~eligible]=-np.inf;scores[list(seen)]=-np.inf
+def top_five(mu,bu,bi,P,Q,user,seen,eligible,counts=None,support_weight=None):
+    raw=mu+bu[user]+bi+Q@P[user]
+    estimates=np.clip(raw,.5,5)
+    scores=estimates.copy() if support_weight is None else raw+support_weight*np.log1p(counts)
+    scores[~eligible]=-np.inf;scores[list(seen)]=-np.inf
     chosen=np.argsort(-scores,kind='stable')[:5]
-    return [(int(i),float(scores[i])) for i in chosen if np.isfinite(scores[i])]
+    return [(int(i),float(estimates[i])) for i in chosen if np.isfinite(scores[i])]
