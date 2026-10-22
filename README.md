@@ -2,6 +2,10 @@
 
 B.Y.T.E Data Science Task 7: collaborative filtering with regularized, biased matrix factorization. Get five recommendations for a dataset user, or rate at least three films to create a temporary visitor profile.
 
+**[Open the live demo](https://ds-7-movie-recommendation-engine-by.vercel.app/)** · [GitHub repository](https://github.com/jarrodfranktamargocics-ui/DS_7_MovieRecommendationEngine_byte)
+
+Deployed on Vercel from the `master` branch on October 23, 2026. The static site serves the saved `web/` artifacts; model training remains a local Python workflow.
+
 ## Dataset and scope
 
 [MovieLens 32M](https://grouplens.org/datasets/movielens/32m/), from GroupLens, contains 32,000,204 ratings. Ratings end **October 12, 2023**. This project does not claim coverage of 2026 releases or every 2023 film.
