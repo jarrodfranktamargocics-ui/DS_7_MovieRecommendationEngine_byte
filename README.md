@@ -2,7 +2,7 @@
 
 B.Y.T.E Data Science Task 7: collaborative filtering with regularized, biased matrix factorization. Get five recommendations for a dataset user, or rate at least three films to create a temporary visitor profile.
 
-**[Open the live demo](https://ds-7-movie-recommendation-engine-by.vercel.app/)** · [GitHub repository](https://github.com/jarrodfranktamargocics-ui/DS_7_MovieRecommendationEngine_byte)
+**[Open the live demo](https://tamargo-ds7-movie-recommendation.vercel.app/)** · [GitHub repository](https://github.com/jarrodfranktamargocics-ui/DS_7_MovieRecommendationEngine_byte)
 
 Deployed on Vercel from the `master` branch on October 23, 2026. The static site serves the saved `web/` artifacts; model training remains a local Python workflow.
 
@@ -169,4 +169,5 @@ Create a public repository named **DS_7_MovieRecommendationEngine_byte** and upl
 In Vercel, choose **Add New → Project**, import that repository, and use the **Other** framework preset. Keep the root directory at the repository root, set the output directory to **web**, and leave build/install commands empty. The included `vercel.json` supplies the static configuration. Deploy, open the generated URL, and test both recommendation modes. No environment variables are needed. Later commits to the connected production branch trigger another deployment.
 
 Author: Jarrod Frank Tamargo — [GitHub](https://github.com/jarrodfranktamargocics-ui).
+
 
